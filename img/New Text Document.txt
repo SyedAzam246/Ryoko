@@ -1,0 +1,3 @@
+http://vod-archive-global-cdn-z01.afreecatv.com/v1/video/_definst_/mp4:vod/20180919/269/73D208F4_207211269_4.mp4/playlist.m3u8
+
+http://vod.afreecatv.com/PLAYER/STATION/37060186
