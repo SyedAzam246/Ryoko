@@ -1,6 +1,13 @@
 .navigation { 
-    margin-top: 1rem ;
+    //margin-top: 1rem ;
+    padding: 2rem 0 6rem 0;
     position: relative;
+    width: 100%;
+    height: 10rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.822); 
+    z-index: 10;
+    //background-color: white;    
+
     &__nav {
         //float: right;
         position: absolute;
@@ -39,14 +46,7 @@
     
         }
 
-        &--btn {/*
-            border: 5px solid transparent;
-            padding: 5px  5px 3px 5px;
-            background-image: linear-gradient(to right, rgba($color-primary,1) 10%, rgba($color-secondary-light,1));
-            //background-clip: padding-box;
-            border-image-slice: 1;
-            background-color: #ffffff;
-            */
+        &--btn {
             word-spacing: 6px;
 
             text-decoration: none;
@@ -101,9 +101,9 @@
         }
         &--btn:active {
             background: rgba(3, 3, 3, 0);
-            transform: translateY(-2px);
+            transform: translateY(2px);
         }
-        &:hover,git 
+        &:hover,
         &:active {
             
             display: block;
@@ -114,7 +114,7 @@
             //position: relative; 
             position: relative;
             //bottom: 10; 
-             
+            text-shadow: 2px 2px 3px rgba(206, 15, 231, 0.459);
             
         }
 
@@ -127,7 +127,9 @@
             width: 100%;
             position: absolute;
             bottom: 10;
-            margin-top: 3px;      
+            margin-top: 3px;
+            
+            //box-shadow: 2px 2px 3px rgba(9, 9, 9, 0.459);      
         }
     }
 

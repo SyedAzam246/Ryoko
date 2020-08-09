@@ -1,0 +1,10 @@
+.header {
+    background-image: linear-gradient(to right bottom, rgba($color-secondary-light,0.5) 10%, rgba($color-black,0.8), rgba($color-tertiary,0.6)), url("../img/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    //margin-top: 1rem;
+    object-fit: cover;
+    z-index: 9;
+}
+
+
