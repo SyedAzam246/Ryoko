@@ -2,13 +2,12 @@
 #9F16FF top color
 #8C00D4 primary color
 #C22AFF secondary color
-#EA15FF terstiray color
+#EA15FF tertiary color
 
 */
 // COLORS
 $color-primary: #9F16FF;
-//$color-primary-light: #;
-//$color-primary-dark: #;
+
 
 $color-secondary: #C22AFF;
 $color-secondary-light: #EA15FF;
@@ -17,13 +16,15 @@ $color-secondary-light: #EA15FF;
 $color-tertiary: #8C00D4;
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
-
+$color-grad-1:#fc00ff;
+$color-grad-2:#00dbde;
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
-$color-grey-dark: #777;
+$color-grey-dark-1: #777;
 $color-grey-dark-2: #999;
 $color-grey-dark-3: #333;
+$color-grey-dark-4: #555;
 
 $color-white: #fff;
 $color-black: #000;

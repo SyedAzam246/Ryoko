@@ -1,0 +1,71 @@
+.form {
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+     box-sizing: content-box;
+   
+    &-group {
+
+        margin-right: 3rem;
+
+        display: inline-block;
+        @include respond(tab-port-small){
+            display: block;
+            margin-bottom: 4rem;
+            
+        }
+        &__input {
+            width: 30rem;
+            padding:1rem 1.3rem;
+            border: none;
+            border-radius: 3px;
+            border-bottom: 3px solid transparent;
+            transition: all .2s;
+
+            @include respond(tab-port-small){
+            width: 100%;
+            display: block;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: 0 1rem 2rem rgba($color-black, .1);
+                border-bottom: 3px solid $color-primary;
+            }
+           
+        }
+
+        &__label {
+            color: $color-white;
+            font-size: $default-font-size;
+            margin-left: 3px;
+            @include respond(tab-port-small){
+            width: 100%;
+            display: block;
+            }
+        }
+
+    }
+
+    &-btn {
+        padding: .8rem 2rem;
+        border-radius: 5px;
+        letter-spacing: 3px;
+        background-color: rgba(89, 100, 105, 0.473);
+        color: rgb(233, 229, 207);
+        outline: none;
+        text-align: center;
+        width: 20rem;
+        transition: letter-spacing .2s;
+        @include respond(tab-port-small){
+         width: 100%;
+         display: block;   
+         padding: 1rem 0rem;
+        }
+
+    &:hover {
+        letter-spacing: 5px;
+        cursor: pointer;
+    }
+
+    }
+}

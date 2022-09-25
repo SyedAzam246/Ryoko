@@ -12,3 +12,53 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+//Box-Shadow
+@mixin box-shadow-1 {
+    
+    text-shadow: 2px 4px 8px #5e5c5ca8;
+}
+
+
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 910px:    Tablet portrait small
+910 - 1060px:    Tablet portrait
+1060 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-port-small
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone-small {
+        @media only screen and (max-width: 22.81em) { @content };    //480px
+    }
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 30em) { @content };    //480px
+    }
+    @if $breakpoint == tab-port-small {
+        @media only screen and (max-width: 58em) { @content };     //910px
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 66.25em) { @content };     //1060px
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+}

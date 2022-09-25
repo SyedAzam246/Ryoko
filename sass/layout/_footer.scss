@@ -1,0 +1,214 @@
+.navigation__footer {
+
+   margin-top: 10rem;
+
+   @include respond(tab-port-small){
+    display: block;
+    //float: none;
+    width: 100%;
+    border-bottom: 2px solid $color-primary;
+}
+   
+}
+
+
+.navigation__link--footer {
+        
+    &:link,
+    &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 1rem;
+    color: #f5f5f5;
+    transition: all .2s;
+    word-spacing: 4px;
+    //height: 5px;
+    width: 100%;
+    display: block;
+    //margin-bottom: 1rem;
+    border-bottom: 2px solid transparent;
+    @include respond(tab-port-small){
+        
+        width: 100%;
+        
+    }
+        
+    @include respond(phone){
+        
+        text-align: center;
+    }
+    }
+
+    &:hover {
+        border-bottom: 2px solid $color-primary;
+        
+    }
+
+}
+
+.footer-right {
+width: 80%;
+margin-top: 10rem;
+float: right;
+@include clearfix;
+margin-right: 1rem;
+
+@include respond(tab-port-small){
+    display: block;
+    float: none;
+    width: 100%;
+    margin-top: 6rem;
+    
+}
+}
+
+
+.footer__copyright {
+color: #f5f5f5;
+word-spacing: 3px;
+//line-height: 3px;
+font-size: 1.6rem;
+text-align: justify;
+border-top: 2px solid $color-primary;
+padding-top: 1rem;
+margin-top: 1rem;
+
+    &--line {
+        color: #f5f5f5;
+        word-spacing: 3px;
+        //line-height: 3px;
+        font-size: 1.6rem;
+        text-align: center;
+        background-color: rgba(15, 15, 15, 0.932);
+    }
+}
+
+.footer__link {
+text-decoration: none;
+color: #8f8888;
+font-size: 1.8rem;
+transition: color .2s;
+
+    &:hover {
+       color: #f5f5f5; 
+    }
+
+}
+
+.social-media {
+    
+    @include respond(phone){
+        
+        text-align: center;
+    }
+   
+    
+    &__link {
+        &:not(:last-child) {
+            margin-right: 11.6%;
+
+            @include respond(phone){
+                margin-right: 5%;
+                text-align: center;
+            }
+        } 
+        
+        text-decoration: none;
+        
+            
+    }
+    &__icon {
+
+        font-size: 3rem;
+        color: #f5f5f5;
+        
+        backface-visibility: hidden;
+        
+        
+        
+
+        &--insta {
+            
+            
+            &:hover {
+                
+                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                -webkit-background-clip: text;
+                color: transparent;
+                height: 3rem;
+                
+            }
+        }
+
+        &--facebook {
+            &:hover {
+                background-color: #3b5999;
+                height: 3rem;
+                -webkit-background-clip: text;
+                color: transparent;
+                
+            }
+        }
+
+        &--youtube {
+            
+            &:hover {
+                background-color: #cd201f;
+                height: 3rem;
+                -webkit-background-clip: text;
+                color: transparent;
+                
+            }
+        }
+
+        &--git {
+            
+            &:hover {
+                background-color: $color-white;
+                height: 3rem;
+                background-color: rgb(196, 184, 184);
+                -webkit-background-clip: text;
+                color: transparent;
+                
+            }
+        }
+        
+        &--linkedin {
+            &:hover {
+                background-color: #0077B5;
+                height: 3rem;
+                -webkit-background-clip: text;
+                color: transparent;
+                
+            }
+        }
+
+        &--twitter {
+            &:hover {
+                background-color: #55acee;
+                height: 3rem;
+                -webkit-background-clip: text;
+                color: transparent;
+                
+            }
+        }
+
+    }
+}
+
+.footer__logo {
+    
+    &-box {
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    &--img {
+        width: 35%;
+        margin: 0 auto;
+        display: block;
+
+    }
+}

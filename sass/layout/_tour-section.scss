@@ -1,0 +1,171 @@
+.tour-nature {
+
+   // @include clearfix;
+    position: relative;
+    //overflow: hidden;
+    //transform: rotateY(180deg);
+
+    @include respond(tab-port-small){
+        
+        width: 100%;
+        height: 100%;
+    }
+    &__picture {
+        width: 70%;
+        //float: left;
+        //background-color: orchid;
+        height: 85vh;
+        clip-path: polygon(0 0, 100% 0, 66% 100%, 0% 100%);
+        position:absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        
+        //text-shadow: 2px 4px 8px #5e5c5ca8;
+        //@include box-shadow-1;
+        
+        @include respond(tab-port-small){
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+            width: 100%;
+            height: 70vh;
+
+        }
+        
+        &-wrap {
+            filter: drop-shadow( 11px 6px 4px #5e5c5ca8);
+            @include respond(tab-port-small){
+                filter: drop-shadow( 0px 6px 4px #5e5c5ca8);
+    
+            }
+            
+        }
+        &--1 {
+            background-image: linear-gradient(to right top, rgba($color-grad-1,0.5), rgba($color-grad-2,0.9)), url("../img/nature.jpg");
+            
+            
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right top, rgba(#7F00FF,0.6), rgba(#17cbeb,0.4)), url("../img/culture.jpg");
+            
+            
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right top, rgba($color-grad-1,0.5), rgba($color-grad-2,0.9)), url("../img/morden.jpg");
+            
+            
+        }
+
+        &--4 {
+            background-image: linear-gradient(to right top, rgba(#7F00FF,0.4), rgba(#3ad2e6,0.8)), url("../img/m1.jpg");
+            
+            
+        }
+
+    }
+
+    &__content {
+       
+        
+        
+        z-index: -1;
+        width: 54%;
+        //float: right;
+        //background-color: palegreen;
+        height: 85vh;
+        
+        display: inline-block;
+        position:absolute;
+        top: 0;
+        right: 0;
+        @include respond(tab-port-small){
+            display: block;
+            width: 100%;
+            top: 60%;
+            right: 14%;
+            //height: 100%;
+            z-index: 1;
+           // margin: 3rem auto 0 auto;
+            //padding-bottom: 5rem;
+            margin-left: 4rem;
+            
+        }
+        
+        &-box {
+            @include absCenter;
+            left: 68%;
+            width: 60%;
+            @include respond(tab-port-small){
+                width: 90%;
+                height: 100%;
+                margin: 0 1.5rem;
+               
+            }
+           
+            
+            
+        }
+
+        &-list {
+            list-style: none;
+        }
+
+        &-item {
+            font-size: 2.2rem;
+            color: $color-black;
+            text-align: left;
+            word-spacing: 3px;
+            //display: block !important;
+            position: relative;
+
+            @include respond(tab-port-small){
+                font-size: 1.8rem;
+               
+            }
+            &::first-letter {
+                text-transform: uppercase;
+            }
+            
+
+            &:not(:first-child)::before {
+                position: absolute;
+                top: 12px;
+                left: -34px;
+                content: "";
+                display: block;
+                margin: 0 2rem 0 0;
+               // transform: skewX(-45deg);
+                height: 20px;
+                width: 20px;
+                border-radius: 20%;
+                background: linear-gradient(to right, rgba($color-primary,1), rgba($color-secondary-light,1));
+                
+                @include respond(tab-port){
+                    top: 6px;
+                    left: -26px;
+                    height: 15px;
+                    width: 15px;
+                }
+            
+            }
+
+        }
+
+        &-quotes {
+            font-style: italic;
+            margin: 1.5rem 0 2rem 0;
+            @include respond(tab-port-small){
+                font-size: 1.7rem;
+               width: 90%;
+            }
+            
+            
+        }
+        
+        
+
+    }
+}
